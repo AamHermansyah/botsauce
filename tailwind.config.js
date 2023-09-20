@@ -7,7 +7,11 @@ module.exports = {
   },
   content: ["./*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      container: {
+        center: true
+      }
+    },
   },
   plugins: []
 }

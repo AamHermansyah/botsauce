@@ -1,0 +1,42 @@
+.navigation {
+  background: linear-gradient(86deg, #101010 3.35%, #2E2E2E 50.97%, #101010 96.72%);
+}
+
+.service-card-cp {
+  position: relative;
+  filter: url(#round);
+}
+
+.service-card-cp::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  padding-top: 86.6%;
+  background: #121212;
+  -webkit-clip-path: polygon(74% 0, 100% 24%, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(74% 0, 100% 24%, 100% 100%, 0 100%, 0 0);
+}
+
+:is(.btn-fill, .btn-outlined) {
+  position: relative;
+}
+
+:is(.btn-fill, .btn-outlined)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.btn-fill::before {
+  background: url('../src/assets/img/elements/button-fill.svg');
+}
+
+.btn-outlined::before {
+  background: url('../src/assets/img/elements/button-outline.svg');
+}
+
+:is(a, button):active {
+  scale: .95;
+  transition: all 100ms ease-in;
+}

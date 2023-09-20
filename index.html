@@ -13,180 +13,279 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./dist/output.css">
+  <link rel="stylesheet" href="./dist/styles.css">
 </head>
-<!-- SECTION 3 -->
-  <section class="w-full shrink-0 bg-[#1C1C1C] font-inter px-[115px] py-[110px]">
-    <div class="inner-child shrink-0">
-        <h1 class="text-center text-5xl font-bold leading-[55px] tracking-[1.2px] text-white pb-[75px]">
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500">
-            Why Choose
-          </span>
-          BotSauce?
-        </h1>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-[50px]">
-          <!-- Card 1 -->
-          <div class="bg-white shadow-md rounded-lg w-[370px] h-[425px] shrink-0 bg-[#121212] filter drop-shadow-[10px 25px 60px rgba(0, 0, 0, 0.06)] flex flex-col items-center">
-            <img class="w-[100px] h-[100px] my-[30px]" src="./src/assets/img/icon/cards/icon-card-1.svg" alt="icon-card-1.svg">
-            <p class="text-transparent text-center bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 text-[25px] font-inter leading-[40px] tracking-[0.75px] pb-[30px]">Efficiency Redefined</p>
-            <p class="w-[299px] text-white text-center font-inter text-[16px] font-normal leading-[25px]">
-              Free yourself from repetitive tasks and supercharge your progression, maximize your gaming efficiency by automating
+<body>
+  <header class="navigation text-white">
+    <div class="relative w-full xl:max-w-[1300px] mx-auto px-10 py-8 flex justify-between">
+      <nav class="flex items-center gap-4 lg:gap-10">
+        <a href="/" class="hover:underline">Home</a>
+        <a href="/" class="hover:underline">Forum</a>
+        <a href="/" class="hover:underline">Store</a>
+      </nav>
+      <a href="/" class="block absolute z-10 left-[50%] -translate-x-[50%]">
+        <img src="./src/assets/img/logo.png" alt="logo-image" class="w-[173px] aspect-[1.07/1] object-cover">
+      </a>
+      <div class="flex items-center gap-4 lg:gap-10">
+        <a href="/" class="hover:underline">Home</a>
+        <button class="w-[157px] py-3 btn-fill">
+          <span class="relative">Download</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 1 -->
+  <section id="hero">
+    <div class="relative min-h-[810px] flex items-center justify-center text-white">
+      <img src="./src/assets/img/hero-bg.png" alt="hero-bg" class="absolute w-full h-full object-cover">
+      <div class="relative px-32 w-full xl:max-w-[1300px] mx-auto">
+        <div class="w-full max-w-[750px] space-y-8">
+          <h1 class="text-5xl font-bold leading-[55px] tracking-[1.2px]">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500">
+              Welcome to BotSauce
+            </span>
+            - Master the Game with Automated Precision
+          </h1>
+          <p class="text-xl font-semibold">
+            Say goodbye to endless hours of manual grinding in your favorite mobile games. Meet BotSauce, the ultimate
+            solution for an enhanced automated gaming experience.
+          </p>
+          <div class="space-x-4">
+            <button class="w-[157px] py-3 btn-fill">
+              <span class="relative">Get Started</span>
+            </button>
+            <button class="w-[157px] py-3 btn-outlined">
+              <span class="relative">Why botsauce</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END SECTION 1 -->
+
+  <!-- SECTION 3 -->
+  <section class="w-full bg-[#1C1C1C] font-inter py-[110px]">
+    <div class="inner-child px-10 xl:max-w-[1300px] mx-auto">
+      <h1 class="text-center text-5xl font-bold leading-[55px] tracking-[1.2px] text-white pb-[75px]">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500">
+          Why Choose
+        </span>
+        BotSauce?
+      </h1>
+
+      <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+        version="1.1">
+        <defs>
+          <filter id="round">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+            <feColorMatrix in="goo" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0"
+              result="colorChange" />
+            <feComposite in="SourceGraphic" in2="colorChange" operator="atop" />
+          </filter>
+        </defs>
+      </svg>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-[50px]">
+        <!-- Card 1 -->
+        <div
+          class="min-h-[425px] shadow-md shrink-0 filter drop-shadow-[10px 25px 60px rgba(0, 0, 0, 0.06)] py-10 px-8 service-card-cp">
+          <div class="relative flex flex-col items-center space-y-4">
+            <img class="w-[100px] aspect-square" src="./src/assets/img/icon/cards/icon-card-1.svg"
+              alt="icon-card-1.svg">
+            <p
+              class="text-transparent text-center bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 text-[25px] font-inter leading-[40px] tracking-[0.75px]">
+              Efficiency Redefined</p>
+            <p class="text-white text-center font-inter text-[16px] font-normal leading-[25px]">
+              Free yourself from repetitive tasks and supercharge your progression, maximize your gaming efficiency by
+              automating
               resource gathering, leveling up, and more. 24/7.
             </p>
           </div>
-         
-          <!-- Card 2 -->
-        <div
-          class="bg-white shadow-md rounded-lg w-[370px] h-[425px] shrink-0 bg-[#121212] filter drop-shadow-[10px 25px 60px rgba(0, 0, 0, 0.06)] flex flex-col items-center">
-          <img class="w-[100px] h-[100px] my-[30px]" src="./src/assets/img/icon/cards/icon-card-2.svg" alt="icon-card-1.svg">
-          <p
-            class="text-transparent text-center bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 text-[25px] font-inter leading-[40px] tracking-[0.75px] pb-[30px]">
-            Intelligent Interaction
-          </p>
-          <p class="w-[299px] text-white text-center font-inter text-[16px] font-normal leading-[25px]">
-            Our bot combines image and text recognition for intelligent decision-making within the game. By avoiding any
-            interference with game code, we've also minimized the risk of bans.
-          </p>
         </div>
 
-          <!-- Card 3 -->
-          <div
-            class="bg-white shadow-md rounded-lg w-[370px] h-[425px] shrink-0 bg-[#121212] filter drop-shadow-[10px 25px 60px rgba(0, 0, 0, 0.06)] flex flex-col items-center">
-            <img class="w-[100px] h-[100px] my-[30px]" src="./src/assets/img/icon/cards/icon-card-3.svg" alt="icon-card-1.svg">
+        <!-- Card 2 -->
+        <div
+          class="min-h-[425px] shadow-md shrink-0 filter drop-shadow-[10px 25px 60px rgba(0, 0, 0, 0.06)] py-10 px-8 service-card-cp">
+          <div class="relative flex flex-col items-center space-y-4">
+            <img class="w-[100px] aspect-square" src="./src/assets/img/icon/cards/icon-card-2.svg"
+              alt="icon-card-1.svg">
             <p
-              class="text-transparent text-center bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 text-[25px] font-inter leading-[40px] tracking-[0.75px] pb-[30px]">
+              class="text-transparent text-center bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 text-[25px] font-inter leading-[40px] tracking-[0.75px]">
+              Intelligent Interaction
+            </p>
+            <p class="text-white text-center font-inter text-[16px] font-normal leading-[25px]">
+              Our bot combines image and text recognition for intelligent decision-making within the game. By avoiding
+              any
+              interference with game code, we've also minimized the risk of bans.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="min-h-[425px] shadow-md shrink-0 filter drop-shadow-[10px 25px 60px rgba(0, 0, 0, 0.06)] py-10 px-8 service-card-cp">
+          <div class="relative flex flex-col items-center space-y-4">
+            <img class="w-[100px] aspect-square" src="./src/assets/img/icon/cards/icon-card-3.svg"
+              alt="icon-card-1.svg">
+            <p
+              class="text-transparent text-center bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 text-[25px] font-inter leading-[40px] tracking-[0.75px]">
               Wide Emulator Support
             </p>
-            <p class="w-[299px] text-white text-center font-inter text-[16px] font-normal leading-[25px]">
-              Whether you're on BlueStacks, MEmu, LDPlayer, or even using your phone via USB, BotSauce seamlessly integrates with a
+            <p class="text-white text-center font-inter text-[16px] font-normal leading-[25px]">
+              Whether you're on BlueStacks, MEmu, LDPlayer, or even using your phone via USB, BotSauce seamlessly
+              integrates
+              with a
               wide range of emulators.
             </p>
           </div>
+        </div>
 
-          <!-- Card 4 -->
-          <div
-            class="bg-white shadow-md rounded-lg w-[370px] h-[425px] shrink-0 bg-[#121212] filter drop-shadow-[10px 25px 60px rgba(0, 0, 0, 0.06)] flex flex-col items-center">
-            <img class="w-[100px] h-[100px] my-[30px]" src="./src/assets/img/icon/cards/icon-card-4.svg" alt="icon-card-1.svg">
+        <!-- Card 4 -->
+        <div
+          class="min-h-[425px] shadow-md shrink-0 filter drop-shadow-[10px 25px 60px rgba(0, 0, 0, 0.06)] py-10 px-8 service-card-cp">
+          <div class="relative flex flex-col items-center space-y-4">
+            <img class="w-[100px] aspect-square" src="./src/assets/img/icon/cards/icon-card-4.svg"
+              alt="icon-card-1.svg">
             <p
-              class="text-transparent text-center bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 text-[25px] font-inter leading-[40px] tracking-[0.75px] pb-[30px]">
+              class="text-transparent text-center bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 text-[25px] font-inter leading-[40px] tracking-[0.75px]">
               Premium Subscription Model
             </p>
             <p class=" text-white text-center font-inter text-[16px] font-normal leading-[25px]">
-              Unlock the ultimate value with our Premium Subscription. For $14 per month, you gain access to all our bots, maximizing your gaming potential without having to pay too much! Fear not, if you prefer only a few bots, our individual bot offerings are still available.
+              Unlock the ultimate value with our Premium Subscription. For $14 per month, you gain access to all our
+              bots,
+              maximizing your gaming potential without having to pay too much! Fear not, if you prefer only a few bots,
+              our
+              individual bot offerings are still available.
             </p>
           </div>
+        </div>
 
-          <!-- Card 5 -->
-          <div
-            class="bg-white shadow-md rounded-lg w-[370px] h-[425px] shrink-0 bg-[#121212] filter drop-shadow-[10px 25px 60px rgba(0, 0, 0, 0.06)] flex flex-col items-center">
-            <img class="w-[100px] h-[100px] my-[30px]" src="./src/assets/img/icon/cards/icon-card-5.svg" alt="icon-card-1.svg">
+        <!-- Card 5 -->
+        <div
+          class="min-h-[425px] shadow-md shrink-0 filter drop-shadow-[10px 25px 60px rgba(0, 0, 0, 0.06)] py-10 px-8 service-card-cp">
+          <div class="relative flex flex-col items-center space-y-4">
+            <img class="w-[100px] aspect-square" src="./src/assets/img/icon/cards/icon-card-5.svg"
+              alt="icon-card-1.svg">
             <p
-              class="text-transparent text-center bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 text-[25px] font-inter leading-[40px] tracking-[0.75px] pb-[30px]">
+              class="text-transparent text-center bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 text-[25px] font-inter leading-[40px] tracking-[0.75px]">
               Unlimited Instances
             </p>
-            <p class="w-[299px] text-white text-center font-inter text-[16px] font-normal leading-[25px]">
-              BotSauce lets you run unlimited bot instances for multiple accounts and games at the same time. And the best part? It’s
+            <p class="text-white text-center font-inter text-[16px] font-normal leading-[25px]">
+              BotSauce lets you run unlimited bot instances for multiple accounts and games at the same time. And the
+              best
+              part? It’s
               free.
             </p>
           </div>
+        </div>
 
-          <!-- Card 6 -->
-          <div
-            class="bg-white shadow-md rounded-lg w-[370px] h-[425px] shrink-0 bg-[#121212] filter drop-shadow-[10px 25px 60px rgba(0, 0, 0, 0.06)] flex flex-col items-center">
-            <img class="w-[100px] h-[100px] my-[30px]" src="./src/assets/img/icon/cards/icon-card-6.svg" alt="icon-card-1.svg">
+        <!-- Card 6 -->
+        <div
+          class="min-h-[425px] shadow-md shrink-0 filter drop-shadow-[10px 25px 60px rgba(0, 0, 0, 0.06)] py-10 px-8 service-card-cp">
+          <div class="relative flex flex-col items-center space-y-4">
+            <img class="w-[100px] aspect-square" src="./src/assets/img/icon/cards/icon-card-6.svg"
+              alt="icon-card-1.svg">
             <p
-              class="text-transparent text-center bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 text-[25px] font-inter leading-[40px] tracking-[0.75px] pb-[30px]">
+              class="text-transparent text-center bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 text-[25px] font-inter leading-[40px] tracking-[0.75px]">
               Fast and Easy Support
             </p>
-            <p class="w-[299px] text-white text-center font-inter text-[16px] font-normal leading-[25px]">
-              Need assistance? Our dedicated support team is just a Discord message away, ready to help you on your journey.
+            <p class="text-white text-center font-inter text-[16px] font-normal leading-[25px]">
+              Need assistance? Our dedicated support team is just a Discord message away, ready to help you on your
+              journey.
             </p>
           </div>
         </div>
+      </div>
     </div>
   </section>
-<!-- END SECTION 3 -->
+  <!-- END SECTION 3 -->
 
-<!-- SECTION 4 -->
-<section class="w-full shrink-0 bg-[#121212] font-inter px-[115px] py-[110px]">
-  <div class="inner-child shrink-0">
-    <h1 class="text-center text-5xl font-bold leading-[55px] tracking-[1.2px] text-white pb-[75px]">
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500">
-        Our
-      </span>
-      bots
-    </h1>
+  <!-- SECTION 4 -->
+  <section class="w-full shrink-0 bg-[#121212] font-inter py-[110px]">
+    <div class="inner-child shrink-0 px-10 xl:max-w-[1300px] mx-auto">
+      <h1 class="text-center text-5xl font-bold leading-[55px] tracking-[1.2px] text-white pb-[75px]">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500">
+          Our
+        </span>
+        bots
+      </h1>
 
-      <div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
+      <div class="w-full grid grid-cols-2 gap-10">
         <!-- Card 1 -->
-        <div class="w-[580px] h-[387px] shrink-0 rounded-xl bg-[#1C1C1C] shadow-lg flex items-center justify-center">
-          <div class="w-[540px] h-[347px] shrink-0 rounded-lg bg-gradient-to-r from-black to-transparent bg-[./src/assets/img/cards/Rectangle-131.svg] relative">
+        <div class="w-full aspect-video shrink-0 rounded-xl bg-[#1C1C1C] shadow-lg flex items-center justify-center">
+          <div
+            class="w-full h-full shrink-0 rounded-lg bg-gradient-to-r from-black to-transparent bg-[./src/assets/img/cards/Rectangle-131.svg] relative">
             <img class="absolute right-0" src="./src/assets/img/cards/component/component-rectangle-131.svg" alt="">
           </div>
         </div>
 
         <!-- Card 1 -->
-        <div class="w-[580px] h-[387px] shrink-0 rounded-xl bg-[#1C1C1C] shadow-lg flex items-center justify-center">
+        <div class="w-full aspect-video shrink-0 rounded-xl bg-[#1C1C1C] shadow-lg flex items-center justify-center">
           <div
-            class="w-[540px] h-[347px] shrink-0 rounded-lg bg-gradient-to-r from-black to-transparent bg-[./src/assets/img/cards/Rectangle-131.svg] relative">
+            class="w-full h-full shrink-0 rounded-lg bg-gradient-to-r from-black to-transparent bg-[./src/assets/img/cards/Rectangle-131.svg] relative">
             <img class="absolute right-0" src="./src/assets/img/cards/component/component-rectangle-131.svg" alt="">
           </div>
         </div>
 
         <!-- Card 1 -->
-        <div class="w-[580px] h-[387px] shrink-0 rounded-xl bg-[#1C1C1C] shadow-lg flex items-center justify-center">
+        <div class="w-full aspect-video shrink-0 rounded-xl bg-[#1C1C1C] shadow-lg flex items-center justify-center">
           <div
-            class="w-[540px] h-[347px] shrink-0 rounded-lg bg-gradient-to-r from-black to-transparent bg-[./src/assets/img/cards/Rectangle-131.svg] relative">
+            class="w-full h-full shrink-0 rounded-lg bg-gradient-to-r from-black to-transparent bg-[./src/assets/img/cards/Rectangle-131.svg] relative">
             <img class="absolute right-0" src="./src/assets/img/cards/component/component-rectangle-131.svg" alt="">
           </div>
         </div>
 
         <!-- Card 1 -->
-        <div class="w-[580px] h-[387px] shrink-0 rounded-xl bg-[#1C1C1C] shadow-lg flex items-center justify-center">
+        <div class="w-full aspect-video shrink-0 rounded-xl bg-[#1C1C1C] shadow-lg flex items-center justify-center">
           <div
-            class="w-[540px] h-[347px] shrink-0 rounded-lg bg-gradient-to-r from-black to-transparent bg-[./src/assets/img/cards/Rectangle-131.svg] relative">
+            class="w-full h-full shrink-0 rounded-lg bg-gradient-to-r from-black to-transparent bg-[./src/assets/img/cards/Rectangle-131.svg] relative">
             <img class="absolute right-0" src="./src/assets/img/cards/component/component-rectangle-131.svg" alt="">
           </div>
         </div>
 
         <!-- Card 1 -->
-        <div class="w-[580px] h-[387px] shrink-0 rounded-xl bg-[#1C1C1C] shadow-lg flex items-center justify-center">
+        <div class="w-full aspect-video shrink-0 rounded-xl bg-[#1C1C1C] shadow-lg flex items-center justify-center">
           <div
-            class="w-[540px] h-[347px] shrink-0 rounded-lg bg-gradient-to-r from-black to-transparent bg-[./src/assets/img/cards/Rectangle-131.svg] relative">
+            class="w-full h-full shrink-0 rounded-lg bg-gradient-to-r from-black to-transparent bg-[./src/assets/img/cards/Rectangle-131.svg] relative">
             <img class="absolute right-0" src="./src/assets/img/cards/component/component-rectangle-131.svg" alt="">
           </div>
         </div>
 
         <!-- Card 1 -->
-        <div class="w-[580px] h-[387px] shrink-0 rounded-xl bg-[#1C1C1C] shadow-lg flex items-center justify-center">
+        <div class="w-full aspect-video shrink-0 rounded-xl bg-[#1C1C1C] shadow-lg flex items-center justify-center">
           <div
-            class="w-[540px] h-[347px] shrink-0 rounded-lg bg-gradient-to-r from-black to-transparent bg-[./src/assets/img/cards/Rectangle-131.svg] relative">
+            class="w-full h-full shrink-0 rounded-lg bg-gradient-to-r from-black to-transparent bg-[./src/assets/img/cards/Rectangle-131.svg] relative">
             <img class="absolute right-0" src="./src/assets/img/cards/component/component-rectangle-131.svg" alt="">
           </div>
         </div>
       </div>
-  </div>
-</section>
-<!-- END SECTION 4 -->
+    </div>
+  </section>
+  <!-- END SECTION 4 -->
 
-<!-- SECTION 5 -->
-<section class="w-full shrink-0 bg-[#121212] font-inter px-[115px] py-[110px]">
-  <h1 class="text-center text-5xl font-bold leading-[55px] tracking-[1.2px] text-white pb-[65px]">
-    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500">
-      Ready to Experience 
-    </span>
-    BotSauce?
-  </h1>
+  <!-- SECTION 5 -->
+  <section class="w-full shrink-0 bg-[#121212] font-inter px-[115px] py-[110px]">
+    <h1 class="text-center text-5xl font-bold leading-[55px] tracking-[1.2px] text-white pb-[65px]">
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500">
+        Ready to Experience
+      </span>
+      BotSauce?
+    </h1>
 
-  <p class=" text-white font-inter text-center m-auto text-[16px] font-normal leading-[25px] w-[633px] pb-[25px]">
-    Download BotSauce now and revolutionize your mobile gaming. Let automation and precision guide you towards unparalleled
-    achievements in your favorite games.
-  </p>
-  
-  <p class=" text-white font-inter text-center m-auto text-[25px] font-bold leading-[40px] w-[633px]">Current client version: 1.028</p>
-</section>
-<!-- SECTION 5 -->
-<body>
+    <p class=" text-white font-inter text-center m-auto text-[16px] font-normal leading-[25px] w-[633px] pb-[25px]">
+      Download BotSauce now and revolutionize your mobile gaming. Let automation and precision guide you towards
+      unparalleled
+      achievements in your favorite games.
+    </p>
+
+    <p class=" text-white font-inter text-center m-auto text-[25px] font-bold leading-[40px] w-[633px]">Current client
+      version: 1.028</p>
+  </section>
+  <!-- SECTION 5 -->
 </body>
 
 </html>
